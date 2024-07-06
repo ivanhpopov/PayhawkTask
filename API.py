@@ -1,6 +1,5 @@
 import requests
 
-
 def check_ip_on_virustotal(ip_address, api_key):
     url = f'https://www.virustotal.com/api/v3/ip_addresses/{ip_address}'
     headers = {"X-Apikey": api_key}
