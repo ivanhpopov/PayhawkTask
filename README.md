@@ -10,4 +10,4 @@ The programming task was built in four stages:
 
 - Fourth, I connected the files by importing the needed functions.
 
-
+NOTE: I have purposefully removed my API key after pushing the project to github.
