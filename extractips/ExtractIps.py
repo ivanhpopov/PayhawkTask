@@ -1,9 +1,9 @@
-import re 
-  
-# opening and reading the file  
+import re
+
+# opening and reading the file
 with open('/home/ipopov/PayhawkTask/extractips/myfile.txt') as fh: 
-   fstring = fh.readlines() 
-  
+   fstring = fh.readlines()
+
 # declaring the regex pattern for IP addresses 
 pattern = re.compile(r'(?<![-\\.\\d])(?:0{0,2}?[0-9]\\.|1\\d?\\d?\\.|2[0-5]?[0-5]?\\.){3}(?:0{0,2}?[0-9]|1\\d?\\d?|2[0-5]?[0-5]?)(?![\\.\\d])') 
   

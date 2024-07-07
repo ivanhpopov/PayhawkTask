@@ -1,5 +1,27 @@
 import tkinter as tk
 from tkinter import filedialog
+from API import check_ip_on_virustotal
+
+
+
+
+API_key = '656eb69d98741d422816b890c809f1d8ac78ff4ac5e225a0048ad11cfdb9bd06'
+
+def get_input_single():
+    input_text_single = Single_addr.get()
+    check_ip_on_virustotal(input_text_single, API_key)
+    
+def get_input_multiple():
+    input_text_multiple = Multiple_addr.get()
+    
+    
+def popup_bonus():
+    win = tk.Toplevel()
+    win.wm_title("Single IP check")
+    label = tk.Label(win, text=get_input_single())
+    label.grid(row=0, column=0)
+    button = tk.Button(win, text="Okay", command=win.destroy)
+    button.grid(row=1, column=0)
 
 def open_text_file():
     # Ask the user to select a text file
@@ -9,7 +31,7 @@ def open_text_file():
         # Read the content of the selected file
         with open(file_path, "r") as file:
             content = file.read()
-            
+
         # Create a new window to display the content
         window = tk.Toplevel(root)
         window.title(f"Content of {file_path}")

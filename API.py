@@ -8,7 +8,8 @@ def check_ip_on_virustotal(ip_address, api_key):
     content = json.loads(response.content)
     ip_dict = content
     repuation = ip_dict["data"]["attributes"]["reputation"]
-    print(f"Reputation of {ip_address} is: {repuation} (higher is better)")
+    result = f"Reputation of {ip_address} is: {repuation} (higher is better)"
+    return result
     
 ip_address = input("Give me an IP:")
 api_key = '656eb69d98741d422816b890c809f1d8ac78ff4ac5e225a0048ad11cfdb9bd06'
