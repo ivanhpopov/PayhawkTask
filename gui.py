@@ -7,7 +7,7 @@ import re
 pattern = re.compile(r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})')
 lst=[]
 multiple_test=[]
-API_key = '656eb69d98741d422816b890c809f1d8ac78ff4ac5e225a0048ad11cfdb9bd06'
+API_key = ''
 
 def check_file_for_ips(file_path):
     with open(file_path) as fh: 
