@@ -1,5 +1,0 @@
-Lumma Stealer log identified - C2 malware, targets crypto wallets, browser extensions and mfa. Exfiltrates data.
-
-Stealc Trojan - Steal info, key log, exfiltrate data, give remote access.
-2Easy shop redline log - potential botnet, steals logs from bots and are sold on dark net afterwards.
-
